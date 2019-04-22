@@ -1,4 +1,4 @@
-package org.andestech.learning.rfb19.g4;
+package org.andestech.learning.rfb19.g4.except;
 
 public class Customer {
 
@@ -10,8 +10,12 @@ public class Customer {
 
     private static void checkCustomer(int age) throws CustomerException
     {
-        if(age < MIN_AGE || age > MAX_AGE)
-            throw new CustomerException("Age exception, try to set age=" + age);
+        if(age < MIN_AGE || age > MAX_AGE){
+//            CustomerException customerException =
+//                    new CustomerException("Age exception, try to set age=" + age);
+//            throw  customerException;
+
+        throw new CustomerException("Age exception, try to set age=" + age);}
     }
 
    // check

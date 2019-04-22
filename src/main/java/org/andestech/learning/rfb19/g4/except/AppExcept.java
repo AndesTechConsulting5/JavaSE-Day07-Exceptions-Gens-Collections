@@ -1,4 +1,4 @@
-package org.andestech.learning.rfb19.g4;
+package org.andestech.learning.rfb19.g4.except;
 
 
 
@@ -7,7 +7,7 @@ public class AppExcept
 
     private static void try1(){
     try{
-        Class.forName("org.andestech.learning.rfb19.g4.ABC");}
+        Class.forName("org.andestech.learning.rfb19.g4.except.ABC");}
     catch (ClassNotFoundException ex){
 
         ex.printStackTrace();
@@ -35,7 +35,23 @@ public class AppExcept
       library.addBook(new Book("AAAA","BBB",1942));
 
 
-      library.addBook(new Book("AAAA","BBB",1942));
+    //  library.addBook(new Book("AAAA","BBB",1942));
+
+
+    // customer
+
+    Customer customer = null;
+
+    try {
+        customer = new Customer(250, "J", "Thomson");
+    }
+    catch (CustomerException ex)
+    {
+        ex.printStackTrace();
+    }
+
+        System.out.println(customer);
+
 
     }
 }

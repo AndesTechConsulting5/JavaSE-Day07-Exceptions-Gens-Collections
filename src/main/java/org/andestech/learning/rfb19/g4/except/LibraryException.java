@@ -1,4 +1,4 @@
-package org.andestech.learning.rfb19.g4;
+package org.andestech.learning.rfb19.g4.except;
 
 import java.util.logging.Logger;
 
@@ -14,6 +14,8 @@ public class LibraryException extends Exception {
     {super(m);
 
      logger = Logger.getLogger("mylog");
+     ///
+     ///
 
     }
 

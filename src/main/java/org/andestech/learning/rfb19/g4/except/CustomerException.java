@@ -1,4 +1,4 @@
-package org.andestech.learning.rfb19.g4;
+package org.andestech.learning.rfb19.g4.except;
 
 public class CustomerException extends Exception {
 
